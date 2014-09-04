@@ -41,6 +41,7 @@ install homebrew/dupes/screen
 #install exiv2
 #install foremost
 install git
+install bash-completion
 #install hashpump
 #install imagemagick --with-webp
 #install lynx
