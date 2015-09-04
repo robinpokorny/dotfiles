@@ -46,3 +46,10 @@ complete -W "NSGlobalDomain" defaults;
 
 # Add `killall` tab completion for common apps
 complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes SystemUIServer Terminal Twitter" killall;
+
+# CHRUBY
+source /usr/local/opt/chruby/share/chruby/chruby.sh
+
+export GITHUB_USER=robinpokorny
+
+source $(brew --prefix nvm)/nvm.sh
