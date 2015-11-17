@@ -48,7 +48,11 @@ complete -W "NSGlobalDomain" defaults;
 complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes SystemUIServer Terminal Twitter" killall;
 
 # CHRUBY
-source /usr/local/opt/chruby/share/chruby/chruby.sh
+if [ -n "$BASH_VERSION" ] || [ -n "$ZSH_VERSION" ]; then
+	source /usr/local/opt/chruby/share/chruby/chruby.sh
+	source /usr/local/opt/chruby/share/chruby/auto.sh
+	chruby ruby-2.2.3
+fi
 
 export GITHUB_USER=robinpokorny
 
