@@ -74,6 +74,7 @@ if tput setaf 1 &> /dev/null; then
 	violet=$(tput setaf 61);
 	white=$(tput setaf 15);
 	yellow=$(tput setaf 136);
+	BASE0=$(tput setaf 244)
 else
 	bold='';
 	reset="\e[0m";
