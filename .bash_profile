@@ -57,4 +57,5 @@ fi
 
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
+source <(npm completion)
 export PATH="/usr/local/sbin:$PATH"
