@@ -55,7 +55,6 @@ if [ -n "$BASH_VERSION" ] || [ -n "$ZSH_VERSION" ]; then
 	chruby ruby-2.3.0
 fi
 
-export GITHUB_USER=robinpokorny
-
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
+export PATH="/usr/local/sbin:$PATH"
