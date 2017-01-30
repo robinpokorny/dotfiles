@@ -84,11 +84,15 @@ brew install woff2
 #brew install ack
 #brew install dark-mode
 #brew install exiv2
+brew install elm
+brew install elm-format
+brew install flow
 brew install git
 brew install git-lfs
 brew install imagemagick --with-webp
 #brew install lua
 brew install lynx
+brew install nvm
 #brew install p7zip
 #brew install pigz
 #brew install pv
@@ -98,6 +102,7 @@ brew install speedtest_cli
 brew install ssh-copy-id
 brew install tree
 brew install webkit2png
+brew install yarn
 #brew install zopfli
 
 brew install ruby-install
