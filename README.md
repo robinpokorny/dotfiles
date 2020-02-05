@@ -46,6 +46,20 @@ export PATH="/usr/local/bin:$PATH"
 
 If `~/.extra` exists, it will be sourced along with the other files. You can use this to add a few custom commands without the need to fork this entire repository, or to add commands you don’t want to commit to a public repository.
 
+My `.extra`:
+
+```
+# Git credentials
+GIT_AUTHOR_NAME="Robin Pokorny"
+GIT_COMMITTER_NAME="$GIT_AUTHOR_NAME"
+git config --global user.name "$GIT_AUTHOR_NAME"
+GIT_AUTHOR_EMAIL="robin.pokorny@klarna.com"
+GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
+git config --global user.email "$GIT_AUTHOR_EMAIL"
+git config --global user.signingkey XXXXXXXX
+git config --global gpg.program /usr/local/MacGPG2/bin/gpg2
+```
+
 You could also use `~/.extra` to override settings, functions and aliases from my dotfiles repository. It’s probably better to [fork this repository](https://github.com/robinpokorny/dotfiles/fork) instead, though.
 
 ### Sensible OS X defaults
