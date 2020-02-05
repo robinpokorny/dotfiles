@@ -74,7 +74,7 @@
 	followTags = true
 
 [rebase]
-        autosquash = true
+    autosquash = true
 
 [commit]
-        gpgsign = true
+    gpgsign = true
