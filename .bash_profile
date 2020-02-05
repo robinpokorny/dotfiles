@@ -48,14 +48,9 @@ complete -W "NSGlobalDomain" defaults;
 # Add `killall` tab completion for common apps
 complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes SystemUIServer Terminal Twitter" killall;
 
-# CHRUBY
-if [ -n "$BASH_VERSION" ] || [ -n "$ZSH_VERSION" ]; then
-	source /usr/local/opt/chruby/share/chruby/chruby.sh
-	source /usr/local/opt/chruby/share/chruby/auto.sh
-	chruby ruby-2.3.3
-fi
+# Load direnv
+eval "$(direnv hook $SHELL)"
 
-export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
-source <(npm completion)
-export PATH="/usr/local/sbin:$PATH"
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

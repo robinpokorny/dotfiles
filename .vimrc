@@ -1,8 +1,3 @@
-" Plugins
-call plug#begin()
-Plug 'elmcast/elm-vim'
-call plug#end()
-
 " Use the Solarized Dark theme
 set background=dark
 colorscheme solarized
