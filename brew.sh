@@ -42,6 +42,7 @@ brew install grep
 brew install openssh
 brew install screen
 brew install php
+brew install ruby
 brew install gmp
 
 # Install other useful binaries.

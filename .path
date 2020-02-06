@@ -1,0 +1,4 @@
+# Extend the `$PATH`
+
+# ruby installed by brew
+export PATH="/usr/local/opt/ruby/bin:$PATH"
